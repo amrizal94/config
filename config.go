@@ -18,8 +18,8 @@ type Config struct {
 	DBName string
 }
 
-func ReadConfig() *Config {
-	err := godotenv.Load("local.env")
+func ReadConfig(filename string) *Config {
+	err := godotenv.Load(filename)
 	if err != nil {
 		fmt.Println("Error saat baca env", err.Error())
 		return nil
