@@ -1,4 +1,4 @@
-module github.com/amrizal94/config/local/v2
+module github.com/amrizal94/config/v2
 
 go 1.19
 
