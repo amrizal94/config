@@ -17,8 +17,8 @@ type Config struct {
 	DBPort int
 }
 
-func ReadConfig() *Config {
-	err := godotenv.Load("local.env")
+func ReadConfig(namefile string) *Config {
+	err := godotenv.Load(namefile)
 	if err != nil {
 		fmt.Println("Error saat baca env", err.Error())
 		return nil
